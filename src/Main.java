@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Hello, Welcome!");
 
         /*
-        * Two Sum
+         * Two Sum
          */
 
         TwoSum twoSum = new TwoSum();
@@ -63,6 +63,24 @@ public class Main {
             System.out.println("\"" + Arrays.toString(twoSumNums4) + "\"" + " : No Two Number Found that that adds upto target, " + target4);
 
         }
+
+        BestTimeToBuyAndSellStock bestTimeToBuyAndSellStockExample = new BestTimeToBuyAndSellStock();
+
+        int[] stockPricesTimeFrame1 = {7, 1, 5, 3, 6, 4};
+        System.out.println("Stocks starts from Day-1 (0th index means Day-1 and Day-0 means invalid, means no profit gain and it's yourwish to buy or sell the stock");
+        int[] stockPricesResult1 = bestTimeToBuyAndSellStockExample.maximumProfit(stockPricesTimeFrame1);
+        int minPriceDayOfTF1 = stockPricesResult1[0] + 1;
+        int maxProfitDayOfTF1 = stockPricesResult1[1] + 1;
+        int maxProfitOfTF1 = stockPricesResult1[2];
+        System.out.println("\"" + Arrays.toString(stockPricesTimeFrame1) + "\"" + " : Buy the stock on Day-" + minPriceDayOfTF1 + ", Sell stock on Day-" + maxProfitDayOfTF1 + ", Profit Gain = " + maxProfitOfTF1);
+
+        int[] stockPricesTimeFrame2 = {7, 6, 4, 3, 1};
+        System.out.println("Stocks starts from Day-1 (0th index means Day-1 and Day-0 means invalid, means no profit gain and it's yourwish to buy or sell the stock");
+        int[] stockPricesResult2 = bestTimeToBuyAndSellStockExample.maximumProfit(stockPricesTimeFrame2);
+        int minPriceDayOfTF2 = stockPricesResult2[0] + 1;
+        int maxProfitDayOfTF2 = stockPricesResult2[1] + 1;
+        int maxProfitOfTF2 = stockPricesResult2[2];
+        System.out.println("\"" + Arrays.toString(stockPricesTimeFrame2) + "\"" + " : Buy the stock on Day-" + minPriceDayOfTF2 + ", Sell stock on Day-" + maxProfitDayOfTF2 + ", Profit Gain = " + maxProfitOfTF2);
 
     }
 
