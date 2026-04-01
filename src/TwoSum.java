@@ -5,16 +5,24 @@ public class TwoSum {
     /**
      * Brute Force:
      * for i : nums.size()
-     *  for j : nums.size()
-     *      if (nums[i] + nums[j] == target)
-     *          return [i, j];
+     * for j : nums.size()
+     * if (nums[i] + nums[j] == target)
+     * return [i, j];
      * Time Complexity: O(n * n)
      * Space Complexity: O(1)
      *
      * Optimized Approach:
-     * Pattern: 3. Need fast lookup / Frequency Count? -> HashMap / HashSet
+     * Pattern: "3️. Need fast lookup / Frequency Count?
+     * ✅ Pattern → HashMap / HashSet" -> HashMap / HashSet
      * Time Complexity: O(n)
      * Space Complexity: O(n)
+     */
+
+    /**
+     *
+     * @param nums
+     * @param target
+     * @return
      */
 
     public int[] twoSumOptimized(int[] nums, int target) {
@@ -29,7 +37,7 @@ public class TwoSum {
             // Checking if anyone already has this missing piece that adds up to target
             if (missingPieceMap.containsKey(complement)) {
 
-                return new int[] {missingPieceMap.get(complement), i};
+                return new int[]{missingPieceMap.get(complement), i};
 
             }
 
@@ -39,7 +47,7 @@ public class TwoSum {
         }
 
         // Didn't find any
-        return new int[] {-1, -1};
+        return new int[]{-1, -1};
 
     }
 
