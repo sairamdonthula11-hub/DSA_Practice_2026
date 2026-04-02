@@ -133,6 +133,37 @@ public class Main {
 
         }
 
+
+        /*
+         * Valid Anagram
+         */
+
+        ValidAnagram validAnagramExample = new ValidAnagram();
+
+        String validAnagramStr1 = "Anagram";
+        String validAnagramStr2 = "Nagaram";
+        System.out.println("\"" + validAnagramStr1 + "\"" + " and " + "\"" + validAnagramStr2 + "\"" + " are Anagram? " + (validAnagramExample.areAnagramAscii(validAnagramStr1, validAnagramStr2) ? "Yes" : "No"));
+
+        String validAnagramStr3 = "rat";
+        String validAnagramStr4 = "car";
+        System.out.println("\"" + validAnagramStr3 + "\"" + " and " + "\"" + validAnagramStr4 + "\"" + " are Anagram? " + (validAnagramExample.areAnagramAscii(validAnagramStr3, validAnagramStr4) ? "Yes" : "No"));
+
+        String validAnagramStr5 = "Heart";
+        String validAnagramStr6 = "Earth";
+        System.out.println("\"" + validAnagramStr5 + "\"" + " and " + "\"" + validAnagramStr6 + "\"" + " are Anagram? " + (validAnagramExample.areAnagramAscii(validAnagramStr5, validAnagramStr6) ? "Yes" : "No"));
+
+        String validAnagramStr7 = "The Eyes";
+        String validAnagramStr8 = "They See";
+        System.out.println("\"" + validAnagramStr7 + "\"" + " and " + "\"" + validAnagramStr8 + "\"" + " are Anagram? " + (validAnagramExample.areAnagramAscii(validAnagramStr7, validAnagramStr8) ? "Yes" : "No"));
+
+        String validAnagramStr9 = "Conversation";
+        String validAnagramStr10 = "Voices rant on";
+        System.out.println("\"" + validAnagramStr9 + "\"" + " and " + "\"" + validAnagramStr10 + "\"" + " are Anagram? " + (validAnagramExample.areAnagramAscii(validAnagramStr9, validAnagramStr10) ? "Yes" : "No"));
+
+        String validAnagramStr11 = "résumé";
+        String validAnagramStr12 = "ésumér";
+        System.out.println("\"" + validAnagramStr11 + "\"" + " and " + "\"" + validAnagramStr12 + "\"" + " are Anagram? " + (validAnagramExample.areAnagramUnicode(validAnagramStr11, validAnagramStr12) ? "Yes" : "No"));
+
     }
 
 }
