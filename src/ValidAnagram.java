@@ -71,7 +71,7 @@ public class ValidAnagram {
     }
 
     /**
-     * Optimized Approach:
+     * Optimized Approach-2 (Input contains Unicode characters):
      * Pattern: "3️. Need fast lookup / Frequency Count?
      * ✅ Pattern → HashMap / HashSet", Valid Anagram, HashMap
      * Time Complexity: O(n)
