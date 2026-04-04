@@ -164,6 +164,35 @@ public class Main {
         String validAnagramStr12 = "ésumér";
         System.out.println("\"" + validAnagramStr11 + "\"" + " and " + "\"" + validAnagramStr12 + "\"" + " are Anagram? " + (validAnagramExample.areAnagramUnicode(validAnagramStr11, validAnagramStr12) ? "Yes" : "No"));
 
+
+        /*
+         * Group Anagrams
+         */
+
+        String[] groupAnagramsInput1 = {"eat", "tea", "tan", "ate", "nat", "bat"};
+
+        System.out.println("Group Anagrams (Optimized-1): " + validAnagramExample.groupAnagramsOptimized1(groupAnagramsInput1));
+
+        System.out.println("Group Anagrams (Optimized-2): " + validAnagramExample.groupAnagramsOptimized2(groupAnagramsInput1));
+
+        String[] groupAnagramsInput2 = {""};
+
+        System.out.println("Group Anagrams (Optimized-1): " + validAnagramExample.groupAnagramsOptimized1(groupAnagramsInput2));
+
+        System.out.println("Group Anagrams (Optimized-2): " + validAnagramExample.groupAnagramsOptimized2(groupAnagramsInput2));
+
+        String[] groupAnagramsInput3 = {"a"};
+
+        System.out.println("Group Anagrams (Optimized-1): " + validAnagramExample.groupAnagramsOptimized1(groupAnagramsInput3));
+
+        System.out.println("Group Anagrams (Optimized-2): " + validAnagramExample.groupAnagramsOptimized2(groupAnagramsInput3));
+
+        String[] groupAnagramsInput4 = {"eat", "tea", "tan", "ate", "nat", "bat", "ac", "bd", "aac", "bbd", "aacc", "bbdd", "acc", "bdd"};
+
+        System.out.println("Group Anagrams (Optimized-1): " + validAnagramExample.groupAnagramsOptimized1(groupAnagramsInput4));
+
+        System.out.println("Group Anagrams (Optimized-2): " + validAnagramExample.groupAnagramsOptimized2(groupAnagramsInput4));
+
     }
 
 }
